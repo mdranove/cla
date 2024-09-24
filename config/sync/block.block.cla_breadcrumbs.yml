@@ -1,0 +1,22 @@
+uuid: ced209b2-821a-4696-8679-7b645bb7de77
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cla
+_core:
+  default_config_hash: Bux6OyrxjA_3UNQ6u6WHS-IV_Kuv7jpR0iJ3BwnNtFA
+id: cla_breadcrumbs
+theme: cla
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

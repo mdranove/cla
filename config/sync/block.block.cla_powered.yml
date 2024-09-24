@@ -1,0 +1,22 @@
+uuid: cd2793b5-71b2-4276-abe9-7125e91d6a55
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cla
+_core:
+  default_config_hash: Sq4yYlo6bDXG7m-p9Tpv2IwdvWjxwbjssiZZmpscKeo
+id: cla_powered
+theme: cla
+region: sidebar_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

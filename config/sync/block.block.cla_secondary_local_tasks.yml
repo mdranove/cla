@@ -1,0 +1,22 @@
+uuid: 481990a2-578e-4938-9d16-bacdd35b38dc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cla
+_core:
+  default_config_hash: _jXWDSUVGFutGTWBPj0bwRUIHPdrvKa16NuzEPDLDxQ
+id: cla_secondary_local_tasks
+theme: cla
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

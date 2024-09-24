@@ -1,0 +1,8 @@
+name: cla
+recipe: drupal10
+config:
+  webroot: web
+  database: mysql:8.0
+services:
+  appserver:
+    type: php:8.2

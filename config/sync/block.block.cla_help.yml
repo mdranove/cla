@@ -1,0 +1,22 @@
+uuid: 286b8ccd-c762-41df-baa1-a77328718c9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cla
+_core:
+  default_config_hash: HM4YkvH5dnZLpmEKEUWWjtpeJrhdg2oXNm7zpAVyW-4
+id: cla_help
+theme: cla
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

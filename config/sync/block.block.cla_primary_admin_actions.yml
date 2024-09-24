@@ -1,0 +1,20 @@
+uuid: 35eb7202-d43e-4029-8b0f-4d9b12fae553
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cla
+_core:
+  default_config_hash: '-NCTgzPKThhfv2fpKuhcIFPOvxe7yoj7y0cwELL4-14'
+id: cla_primary_admin_actions
+theme: cla
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

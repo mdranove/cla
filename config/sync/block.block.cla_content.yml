@@ -1,0 +1,22 @@
+uuid: fb28f64c-2077-469e-bd2b-588520704ccc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cla
+_core:
+  default_config_hash: CiBjSwgbxabxP53O64ow0A0qaiek4K_ypLQ-jg4Xfn0
+id: cla_content
+theme: cla
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
