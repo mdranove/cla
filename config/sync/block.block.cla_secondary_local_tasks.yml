@@ -1,11 +1,11 @@
-uuid: 481990a2-578e-4938-9d16-bacdd35b38dc
+uuid: f78c0dd3-616d-4257-ba4d-3b31df1dddbc
 langcode: en
 status: true
 dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: _jXWDSUVGFutGTWBPj0bwRUIHPdrvKa16NuzEPDLDxQ
+  default_config_hash: O5jkjSPEJuBwntdaayrsQ3WcUIB-evZlXK52TDTKM0k
 id: cla_secondary_local_tasks
 theme: cla
 region: content

@@ -1,4 +1,4 @@
-uuid: ced209b2-821a-4696-8679-7b645bb7de77
+uuid: 69ec70f4-d7a2-4385-9b31-cb0108ea092b
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: Bux6OyrxjA_3UNQ6u6WHS-IV_Kuv7jpR0iJ3BwnNtFA
+  default_config_hash: XX49Zdo6eSPebMNH6NYekffmA4k00y2R103nBA5fAAc
 id: cla_breadcrumbs
 theme: cla
 region: breadcrumb

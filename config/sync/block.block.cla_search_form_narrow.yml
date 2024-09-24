@@ -1,4 +1,4 @@
-uuid: d3283430-e5e8-4886-9610-043345c0628e
+uuid: 8d64d63c-9ce7-4cde-a708-068a9a6bf627
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: 8-d-YwyCsaMm3ejNiJm_5ZrKplfG2umuXc0J1vtmrj4
+  default_config_hash: XG1Hia4ip2QHMoJohSGPJjYDt-mB35j3FzA-4FuVpL0
 id: cla_search_form_narrow
 theme: cla
 region: sidebar_first

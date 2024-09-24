@@ -1,4 +1,4 @@
-uuid: cd2793b5-71b2-4276-abe9-7125e91d6a55
+uuid: 373cf10a-17c0-4fd7-8d23-7dc38d325a47
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: Sq4yYlo6bDXG7m-p9Tpv2IwdvWjxwbjssiZZmpscKeo
+  default_config_hash: 2xU9HHmb-wNKItmwidbNcV_7H8w4giHuDYN7QCnoFG0
 id: cla_powered
 theme: cla
-region: sidebar_first
+region: footer_fifth
 weight: -7
 provider: null
 plugin: system_powered_by_block

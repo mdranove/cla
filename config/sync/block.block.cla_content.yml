@@ -1,4 +1,4 @@
-uuid: fb28f64c-2077-469e-bd2b-588520704ccc
+uuid: c0174254-c1ee-4a79-9486-6517a5e2498b
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: CiBjSwgbxabxP53O64ow0A0qaiek4K_ypLQ-jg4Xfn0
+  default_config_hash: XcBD3DzC_jwzzIPRj2alRRd6yTCYFfHQ-GveZMPK6ek
 id: cla_content
 theme: cla
 region: content

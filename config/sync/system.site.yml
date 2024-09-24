@@ -1,9 +1,9 @@
 _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
-uuid: 90091005-6408-4842-ad8e-41dd422867cb
-name: 'Drush Site-Install'
-mail: admin@example.com
+uuid: da04608f-8a52-4462-9f2a-0210914b5706
+name: 'Center for Lore Accuracy'
+mail: mdranove1@gmail.com
 slogan: ''
 page:
   403: ''

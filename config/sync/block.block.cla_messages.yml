@@ -1,4 +1,4 @@
-uuid: 97d76c67-83a1-4bd0-abb6-9c57c1ec26c4
+uuid: 49cdc4fc-a367-457a-b11c-daddcdfa336d
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - cla
 _core:
-  default_config_hash: HcmK2CYcBEMGKELu4E1FF45G06oaVV0VfjYJD3seN80
+  default_config_hash: jqRzTaQWK4x7HVARslHF6aWRyiApe4VAPu-sqY9546I
 id: cla_messages
 theme: cla
 region: highlighted
