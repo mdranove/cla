@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_video
     - node.type.page
   module:
     - text
@@ -20,9 +21,8 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-  links:
-    weight: 101
-    region: content
-hidden: {  }
+hidden:
+  field_video: true
+  links: true

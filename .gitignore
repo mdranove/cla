@@ -7,6 +7,11 @@
 # Because .gitignore can be specific to your site, this file has a different
 # name; updating Drupal core will not override your custom .gitignore file.
 
+# Ignore some local configs
+.DS_Store
+.ddev
+.idea/
+
 # Ignore core when managing all of a project's dependencies with Composer
 # including Drupal core.
 /web/core
@@ -15,6 +20,8 @@
 /web/themes/contrib
 /web/modules/contrib
 
+# Ignore node_modules
+/web/themes/custom/cla/node_modules
 
 # Ignore dependencies that are managed with Composer.
 # Generally you should only ignore the root vendor directory. It's important
@@ -23,8 +30,8 @@
 /vendor/
 
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
-sites/*/services*.yml
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
 /web/sites/*/files

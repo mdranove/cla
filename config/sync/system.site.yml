@@ -1,14 +1,14 @@
 _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
-uuid: da04608f-8a52-4462-9f2a-0210914b5706
+uuid: 0c639f07-c367-4cae-b837-dcd3066f9135
 name: 'Center for Lore Accuracy'
 mail: mdranove1@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
