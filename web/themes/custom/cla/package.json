@@ -2,9 +2,10 @@
   "name": "cla",
   "version": "5.1.0",
   "description": "Bootstrap SASS implementation",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "keywords": [
     "SASS",

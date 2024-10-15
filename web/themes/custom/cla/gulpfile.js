@@ -1,31 +1,32 @@
-let gulp = require('gulp'),
-  sass = require('gulp-sass')(require('sass')),
-  sourcemaps = require('gulp-sourcemaps'),
-  $ = require('gulp-load-plugins')(),
-  cleanCss = require('gulp-clean-css'),
-  rename = require('gulp-rename'),
-  postcss = require('gulp-postcss'),
-  autoprefixer = require('autoprefixer'),
-  postcssInlineSvg = require('postcss-inline-svg'),
-  browserSync = require('browser-sync').create(),
-  pxtorem = require('postcss-pxtorem'),
-  postcssProcessors = [
-    postcssInlineSvg({
-      removeFill: true,
-      paths: ['./node_modules/bootstrap-icons/icons'],
-    }),
-    pxtorem({
-      propList: [
-        'font',
-        'font-size',
-        'line-height',
-        'letter-spacing',
-        '*margin*',
-        '*padding*',
-      ],
-      mediaQuery: true,
-    }),
-  ];
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
+const $ = require('gulp-load-plugins')();
+const cleanCss = require('gulp-clean-css');
+const rename = require('gulp-rename');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const postcssInlineSvg = require('postcss-inline-svg');
+const browserSync = require('browser-sync').create();
+const pxtorem = require('postcss-pxtorem');
+
+const postcssProcessors = [
+  postcssInlineSvg({
+    removeFill: true,
+    paths: ['./node_modules/bootstrap-icons/icons'],
+  }),
+  pxtorem({
+    propList: [
+      'font',
+      'font-size',
+      'line-height',
+      'letter-spacing',
+      '*margin*',
+      '*padding*',
+    ],
+    mediaQuery: true,
+  }),
+];
 
 const paths = {
   scss: {
@@ -59,7 +60,7 @@ function styles() {
     .pipe(
       postcss([
         autoprefixer({
-          browsers: [
+          overrideBrowserslist: [
             'Chrome >= 35',
             'Firefox >= 38',
             'Edge >= 12',
@@ -89,21 +90,13 @@ function js() {
     .pipe(browserSync.stream());
 }
 
-// Static Server + watching scss/html files
-function serve() {
-  browserSync.init({
-    proxy: 'https://www.drupal.org',
-  });
-
-  gulp
-    .watch([paths.scss.watch, paths.scss.bootstrap], styles)
-    .on('change', browserSync.reload);
-}
-
+// Build task combining styles and js
 const build = gulp.series(styles, gulp.parallel(js, serve));
 
+// Export tasks
 exports.styles = styles;
 exports.js = js;
 exports.serve = serve;
+exports.build = build;
 
 exports.default = build;
