@@ -933,8 +933,13 @@ $settings['config_sync_directory'] = '../config/sync';
  * Keep this code block at the end of this file to take full effect.
  */
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+$env = getenv('APP_ENV');
+
+if ($env !== 'prod') {
+  // Include settings.local.php only if not in production
+  if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+    include $app_root . '/' . $site_path . '/settings.local.php';
+  }
 }
 
 
